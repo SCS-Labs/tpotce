@@ -42,11 +42,11 @@ RUN sed -i 's/dl-cdn/dl-2/g' /etc/apk/repositories && \
     echo "xpack.infra.enabled: false" >> /usr/share/kibana/config/kibana.yml && \ 
     echo "xpack.logstash.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
     echo "xpack.canvas.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
-    echo "xpack.spaces.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
+    echo "xpack.spaces.enabled: true" >> /usr/share/kibana/config/kibana.yml && \
     echo "xpack.apm.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
-    echo "xpack.security.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
+    echo "xpack.security.enabled: true" >> /usr/share/kibana/config/kibana.yml && \
     echo "xpack.uptime.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
-    echo "xpack.siem.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
+    echo "xpack.siem.enabled: true" >> /usr/share/kibana/config/kibana.yml && \
     echo "xpack.ml.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
     echo "elasticsearch.requestTimeout: 60000" >> /usr/share/kibana/config/kibana.yml && \
     echo "elasticsearch.shardTimeout: 60000" >> /usr/share/kibana/config/kibana.yml && \
